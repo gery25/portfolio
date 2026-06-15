@@ -32,7 +32,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
 
 if env('DEBUG') is True:
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
 else:
     ALLOWED_HOSTS = ['safont.dev', 'www.safont.dev']
 
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'archery_portfolio',
 ]
 
 MIDDLEWARE = [
