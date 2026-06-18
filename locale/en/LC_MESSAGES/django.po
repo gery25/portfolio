@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-18 09:51+0200\n"
+"POT-Creation-Date: 2026-06-18 12:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,47 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: config/settings.py:136
+
+#: config/settings.py:137
 msgid "Catalan"
 msgstr ""
 
-#: config/settings.py:137
+#: config/settings.py:138
 msgid "Spanish"
 msgstr ""
 
-#: config/settings.py:138
+#: config/settings.py:139
 msgid "English"
 msgstr ""
+
+#: developer_portfolio/templates/developer_portfolio/base.html:14
+msgid "Inici"
+msgstr "Home"
+
+#: developer_portfolio/templates/developer_portfolio/base.html:15
+msgid "Sobre mi"
+msgstr "About me"
+
+#: developer_portfolio/templates/developer_portfolio/base.html:16
+msgid "Projectes"
+msgstr "Projects"
+
+#: developer_portfolio/templates/developer_portfolio/base.html:45
+msgid "Contacte"
+msgstr "Contact"
+
+#: developer_portfolio/templates/developer_portfolio/base.html:50
+msgid "Enviar correu"
+msgstr "Send mail"
+
+#: developer_portfolio/templates/developer_portfolio/base.html:54
+msgid "Copiar correu"
+msgstr "Copy mail"
+
+#: developer_portfolio/templates/developer_portfolio/base.html:58
+msgid "¡Copiat!"
+msgstr "Copy!"
+
+#: developer_portfolio/templates/developer_portfolio/base.html:67
+msgid "Dissenyat per mi"
+msgstr "Designed by me"
