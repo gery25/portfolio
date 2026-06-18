@@ -1,0 +1,72 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}My Portfolio{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'developer_portfolio/css/base.css' %}">
+    </head>
+    <body>
+        <header class="dev-portfolio-header">
+            <nav class="nav-links">
+                <a href="" class="nav-item">{% trans "Inici" %}</a>
+                <a href="" class="nav-item">{% trans "Sobre mi" %}</a>
+                <a href="" class="nav-item">{% trans "Projectes" %}</a>
+            </nav>
+
+            <form action="{% url 'set_language' %}" method="post" class="lang-form">
+                {% csrf_token %}
+                {% get_current_language as LANGUAGE_CODE %}
+                
+                <button type="submit" name="language" value="ca" 
+                        class="lang-btn {% if LANGUAGE_CODE == 'ca' %}active{% endif %}">
+                    CA
+                </button>
+                
+                <button type="submit" name="language" value="es" 
+                        class="lang-btn {% if LANGUAGE_CODE == 'es' %}active{% endif %}">
+                    ES
+                </button>
+                
+                <button type="submit" name="language" value="en" 
+                        class="lang-btn {% if LANGUAGE_CODE == 'en' %}active{% endif %}">
+                    EN
+                </button>
+            </form>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+        <footer class="portfolio-footer">
+            <div class="footer-contact">
+                <h3>{% trans "Contacte" %}</h3>
+                
+                <div class="email-box">
+                    <span id="my-email" class="footer-email">gerardsaca2005@gmail.com</span>
+                    
+                    <a href="mailto:gerardsaca2005@gmail.com" class="email-action-btn" title="{% trans 'Enviar correu' %}">
+                        ✉️
+                    </a>
+                    
+                    <button type="button" id="copy-btn" class="email-action-btn" title="{% trans 'Copiar correu' %}">
+                        📋
+                    </button>
+                </div>
+                <span id="copy-toast" class="copy-toast">{% trans "¡Copiat!" %}</span>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://github.com/gery25" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/gerard-safont-catena-657a91316/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+            </div>
+
+            <div class="footer-copy">
+                <p>&copy; {% now "Y" %} - {% trans "Dissenyat per mi" %}</p>
+            </div>
+        </footer>
+        <script src="{% static 'developer_portfolio/js/base.js' %}"></script>
+    </body>
+</html> 
