@@ -1,0 +1,37 @@
+{% extends "developer_portfolio/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'developer_portfolio/css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="profile-info-container">
+        <div class="image-container">
+            <img src="{% static 'developer_portfolio/image/portfolio_image.webp' %}" alt="{% trans 'Imatge Portfoli' %}" class="portfolio-image">
+        </div>
+        <div class="profile-info">
+            <h1 class="profile-name">{% trans "Hola, Soc" %} Gerard Safont Catena</h1>
+            <p class="profile-title">{% trans "Desenvolupador Júnior | Enginyer Informàtic" %}</p>
+            <p class="contact-label">{% trans "Contacte" %}</p>
+            <a href="mailto:gerardsaca2005@gmail.com" class="profile-email">gerardsaca2005@gmail.com</a>
+            <p class="profile-description">{% trans "Sóc un desenvolupador júnior que està acabant de cursar el Grau en Enginyeria Informàtica a la UdL, interessat a continuar aprenent i resolent diferents reptes." %}</p>
+        </div>
+    </div>
+    <div class="projects-section">
+        <h3 class="section-title">{% trans "Projectes destacats" %}</h3>
+        <div class="projects-container">
+            {% for project in top_projects %} 
+                <article class="project-card">
+                    <div class="card-content">
+                        <h4 class="project-name">{{ project.name }}</h4>
+                        <img src="{{ project.image.url }}" alt="{{ project.name }}">
+                        <p class="project-description">{{ project.description }}</p>
+                        <a href="{{ project.github_link }}" target="_blank" class="project-link">{% trans "Veure projecte" %}</a>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
