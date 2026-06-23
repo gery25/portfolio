@@ -37,6 +37,9 @@ if env('DEBUG') is True:
 else:
     ALLOWED_HOSTS = ['safont.dev', 'www.safont.dev']
 
+CSRF_TRUSTED_ORIGINS = ['https://safont.dev', 'https://www.safont.dev']
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 
 # Application definition
 
