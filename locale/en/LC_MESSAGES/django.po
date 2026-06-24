@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-19 17:23+0200\n"
+"POT-Creation-Date: 2026-06-24 11:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,50 +18,61 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: config/settings.py:137
-msgid "Catalan"
-msgstr ""
-
-#: config/settings.py:138
-msgid "Spanish"
-msgstr ""
-
-#: config/settings.py:139
-msgid "English"
-msgstr ""
-
-#: developer_portfolio/templates/developer_portfolio/base.html:15
+#: archery_portfolio/templates/archery_portfolio/base.html:16
+#: developer_portfolio/templates/developer_portfolio/base.html:16
 msgid "Inici"
 msgstr "Home"
 
-#: developer_portfolio/templates/developer_portfolio/base.html:16
+#: archery_portfolio/templates/archery_portfolio/base.html:17
+#: developer_portfolio/templates/developer_portfolio/base.html:17
 msgid "Sobre mi"
 msgstr "About me"
 
-#: developer_portfolio/templates/developer_portfolio/base.html:17
-msgid "Projectes"
-msgstr "Projects"
+#: archery_portfolio/templates/archery_portfolio/base.html:18
+msgid "Competicions"
+msgstr "Competitions"
 
-#: developer_portfolio/templates/developer_portfolio/base.html:46
+#: archery_portfolio/templates/archery_portfolio/base.html:49
+#: developer_portfolio/templates/developer_portfolio/base.html:48
 #: developer_portfolio/templates/developer_portfolio/home.html:17
 msgid "Contacte"
 msgstr "Contact"
 
-#: developer_portfolio/templates/developer_portfolio/base.html:51
+#: archery_portfolio/templates/archery_portfolio/base.html:54
+#: developer_portfolio/templates/developer_portfolio/base.html:53
 msgid "Enviar correu"
 msgstr "Send mail"
 
-#: developer_portfolio/templates/developer_portfolio/base.html:55
+#: archery_portfolio/templates/archery_portfolio/base.html:58
+#: developer_portfolio/templates/developer_portfolio/base.html:57
 msgid "Copiar correu"
 msgstr "Copy mail"
 
-#: developer_portfolio/templates/developer_portfolio/base.html:59
+#: archery_portfolio/templates/archery_portfolio/base.html:62
+#: developer_portfolio/templates/developer_portfolio/base.html:61
 msgid "¡Copiat!"
 msgstr "Copy!"
 
-#: developer_portfolio/templates/developer_portfolio/base.html:68
+#: archery_portfolio/templates/archery_portfolio/base.html:71
+#: developer_portfolio/templates/developer_portfolio/base.html:70
 msgid "Dissenyat per mi"
 msgstr "Designed by me"
+
+#: config/settings.py:140
+msgid "Catalan"
+msgstr ""
+
+#: config/settings.py:141
+msgid "Spanish"
+msgstr ""
+
+#: config/settings.py:142
+msgid "English"
+msgstr ""
+
+#: developer_portfolio/templates/developer_portfolio/base.html:18
+msgid "Projectes"
+msgstr "Projects"
 
 #: developer_portfolio/templates/developer_portfolio/home.html:12
 msgid "Imatge Portfoli"
