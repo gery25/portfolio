@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-24 11:05+0200\n"
+"POT-Creation-Date: 2026-06-25 14:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,7 @@ msgid "Competicions"
 msgstr "Competiciones"
 
 #: archery_portfolio/templates/archery_portfolio/base.html:49
+#: archery_portfolio/templates/archery_portfolio/home.html:19
 #: developer_portfolio/templates/developer_portfolio/base.html:48
 #: developer_portfolio/templates/developer_portfolio/home.html:17
 msgid "Contacte"
@@ -58,6 +59,33 @@ msgstr "¡Copiado!"
 msgid "Dissenyat per mi"
 msgstr "Diseñado por mí"
 
+#: archery_portfolio/templates/archery_portfolio/home.html:13
+#: developer_portfolio/templates/developer_portfolio/home.html:12
+msgid "Imatge Portfoli"
+msgstr "Profile Image"
+
+#: archery_portfolio/templates/archery_portfolio/home.html:17
+#: developer_portfolio/templates/developer_portfolio/home.html:15
+msgid "Hola, Soc"
+msgstr "Hola, Soy"
+
+#: archery_portfolio/templates/archery_portfolio/home.html:18
+msgid "Arquer recorbat sènior"
+msgstr "Arquero recurvo senior"
+
+#: archery_portfolio/templates/archery_portfolio/home.html:21
+msgid "Veure el meu portfoli de desenvolupador"
+msgstr "Ver mi portafolio de desarrollador"
+
+#: archery_portfolio/templates/archery_portfolio/home.html:22
+msgid ""
+"Fora del món laboral, la meva gran passió és el tir amb arc olímpic "
+"(recorbat), on competeixo en la categoria sènior. Aquesta disciplina "
+"m'aporta valors clau per al meu dia a dia: una alta capacitat de "
+"concentració, gestió de la pressió i una cerca constant de la precisió i la "
+"millora contínua."
+msgstr "Fuera del mundo laboral, mi gran pasión es el tiro con arco olímpico (recurvo), donde compito en la categoría senior. Esta disciplina me aporta valores clave para mi día a día: una alta capacidad de concentración, gestión de la presión y una búsqueda constante de la precisión y la mejora continua."
+
 #: config/settings.py:140
 msgid "Catalan"
 msgstr ""
@@ -73,14 +101,6 @@ msgstr ""
 #: developer_portfolio/templates/developer_portfolio/base.html:18
 msgid "Projectes"
 msgstr "Proyectos"
-
-#: developer_portfolio/templates/developer_portfolio/home.html:12
-msgid "Imatge Portfoli"
-msgstr "Profile Image"
-
-#: developer_portfolio/templates/developer_portfolio/home.html:15
-msgid "Hola, Soc"
-msgstr "Hola, Soy"
 
 #: developer_portfolio/templates/developer_portfolio/home.html:16
 msgid "Desenvolupador Júnior | Enginyer Informàtic"
