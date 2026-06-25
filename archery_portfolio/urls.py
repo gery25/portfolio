@@ -3,5 +3,5 @@ from django.urls import path
 from archery_portfolio import views
 
 urlpatterns = [
-    path('', views.base, name='base'),
+    path('', views.home, name='archery_home'),
 ]
