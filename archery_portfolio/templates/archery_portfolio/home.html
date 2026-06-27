@@ -1,0 +1,56 @@
+{% extends "archery_portfolio/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'archery_portfolio/css/home.css' %}">
+{% endblock %}
+
+{%block content%}
+    <div class="profile-info-container">
+        <div class="profile-image">
+            <!-- Profile image content -->
+             <img src="{% static 'archery_portfolio/image/imatge-archery.webp'%}" alt="{% trans 'Imatge Portfoli' %}" class="portfolio-image">
+        </div>
+        <div class="profile-details">
+            <!-- Profile details content -->
+             <h1 class="profile-name">{% trans "Hola, Soc" %} Gerard Safont Catena</h1>
+            <p class="profile-title">{% trans "Arquer recorbat sènior" %}</p>
+            <p class="contact-label">{% trans "Contacte" %}</p>
+            <a href="mailto:gerardsaca2005@gmail.com" class="profile-email">gerardsaca2005@gmail.com</a>
+            <a href="{% url 'developer_home' %}" class="profile-developer">{% trans "Veure el meu portfoli de desenvolupador" %}</a>
+            <p class="profile-description">{% trans "Fora del món laboral, la meva gran passió és el tir amb arc olímpic (recorbat), on competeixo en la categoria sènior. Aquesta disciplina m'aporta valors clau per al meu dia a dia: una alta capacitat de concentració, gestió de la pressió i una cerca constant de la precisió i la millora contínua." %}</p>
+        </div>
+    </div>
+
+    <div class="competition-section">
+        <h3 class="section-title">{% trans "Últimes competicions" %}</h3>
+        <div class="competition-container">
+            {% for comp in last_competitions %}
+                <article class="competition-card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h4 class="card-name">{{ comp.name }}</h4>
+                            <span class="card-type">{{ comp.type }}</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">{{ comp.date|date:"d/m/Y" }}</span>
+                            {% if comp.position %}
+                                <span class="card-position">{% trans "Posició" %}: {{ comp.position }}</span>
+                            {% endif %}
+                            {% if comp.mark %}
+                                <span class="card-mark">{% trans "Marca" %}: {{ comp.mark }}</span>
+                            {% endif %}
+                        </div>
+                        <p class="card-description">{{ comp.description }}</p>
+                        {% if comp.competition_link %}
+                            <a href="{{ comp.competition_link }}" target="_blank" rel="noopener noreferrer" class="card-link">
+                                {% trans "Veure resultats" %}
+                            </a>
+                        {% endif %}
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+{%endblock%}
