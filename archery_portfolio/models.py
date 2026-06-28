@@ -14,3 +14,6 @@ class Competitions(models.Model):
     position = models.CharField(max_length=100, blank=True, null=True)
     mark = models.CharField(max_length=100, blank=True, null=True)
     competition_link = models.URLField(blank=True, null=True)
+
+    def __str__(self):
+        return self.name
