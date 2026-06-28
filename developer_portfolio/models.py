@@ -9,6 +9,9 @@ class Project(models.Model):
     tech_stack = models.CharField(max_length=200)
     github_link = models.URLField(blank=True, null=True)
 
+    def __str__(self):
+        return self.name
+
 class Skill(models.Model):
     class Category(models.TextChoices):
         FRONTEND = 'Frontend', 'Frontend'
@@ -20,3 +23,6 @@ class Skill(models.Model):
     name = models.CharField(max_length=100)
     category = models.CharField(max_length=20, choices=Category.choices)
     icon = models.ImageField(upload_to='developer_portfolio/static/developer_portfolio/image/icons/')
+
+    def __str__(self):
+        return self.name
