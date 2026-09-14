@@ -22,7 +22,7 @@ jobs:
                 port: ${{ secrets.SERVER_PORT }}
                 script: |
                     
-                    cd /home/pi/portfolio
+                    cd /home/gerard/portfolio
                 
                     git pull origin main
                     
